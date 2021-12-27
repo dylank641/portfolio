@@ -49,9 +49,11 @@
 
         <!--"about" section-->
         <section id="" class="about">
-            <h2 class="section-tile">
-                ABOUT
-            </h2>
+            <div class="flex-row">
+                <h2 class="section-tile">
+                    ABOUT
+                </h2>
+            </div>
             <div class="expectation-icons">
                 <div>
                     <img src="assets/images/Fast Working_Monochromatic.svg" alt="fast working example" />
@@ -86,16 +88,51 @@
         
         <!--project section-->
         <section id="" class="projects">
-            <h2 class="section-title">
-                PROJECTS
-            </h2>
+            <div class="flex-row"></div>
+                <h2 class="section-title">
+                    PROJECTS
+                </h2>
+            </div>
             <div class="project-flex">
-                <img src="assets/images/www.runbuddy.com.jpg" alt="showcasing the run buddy project" />
+                <a href="goldenleafshop.com" target="_blank"><img src="assets/images/www.runbuddy.com.jpg" alt="showcasing the run buddy project" /> </a>
                 <img src="assets/images/HORiseon marketing agency.jpg" alt="showcasing the horiseon project" />
                 <img src="assets/images/example.jpg" alt="example of project" />
                 <img src="assets/images/example1.jpg" alt="example of project" />
                 <img src="assets/images/example3.jpg" alt="example of project" />
             </div>
         </section>
+        <!--project section end-->
+
+        <!--contact section start-->
+        <section id="contact-me" class="contact">
+            <div class="flex-row">
+                <h2 class="section title">
+                    CONTACT ME
+                </h2>
+            </div>
+            <div class="contact-info">
+                <div>
+                    <h3>Personal Info</h3>
+                    <address>
+                        Phone: 956-252-9992
+                        Email: <a href="mailto:dylan.killelea@yahoo.com">dylan.killelea@yahoo.com</a>
+                    </address>
+                </div>
+                <div class="contact-form">
+                    <h3>Send Me a Message</h3>
+                    <form>
+                        <label for="contact-name">Enter Your Name</label>
+                        <input type="text" id="contact-name" placeholder="Your Name" />
+
+                        <label for="email">Email</label>
+                        <input type="text" id="email" placeholder="Enter Email" />
+
+                        <label for="contact-message">Message</label>
+                        <textarea id="contact-message" placeholder="Message"></textarea>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!--contact section end-->
     </body>
 </html>
