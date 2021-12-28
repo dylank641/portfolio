@@ -1,0 +1,125 @@
+:root {
+    --primary-color: #0002E8;
+    --secondary-color: #3838C2;
+    --tertiary-color: #f64c72;
+}
+
+body {
+    color: var(--secondary-color);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+/*hero img start*/
+.hero {
+    background-image: url("../assets/images/ash-edmonds-gcINRBbUxl0-unsplash.jpg");
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+    height: 1000px;
+    width: 100%;
+}
+
+.hero-text {
+    font-size: 30px;
+    text-align: center;
+    padding: 20%;
+    color: white;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.hero-text span {
+    color: rgb(226, 55, 141);
+    font-style: italic;
+}
+
+.hero-text button {
+    background-color: var(--primary-color);
+    border: 3px solid var(--primary-color);
+    color:white;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 4px 2px;
+    cursor: pointer;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+/*hero img end*/
+
+/*header start*/
+header {
+    padding: 20px 35px;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-image: url("../images/hero-bg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
+    z-index: 9999;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--tertiary-color);
+}
+header nav {
+    margin: 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header nav ul li a:hover {
+    background: var(--tertiary-color);
+    color: var(--primary-color);
+    border-radius: 15px;
+    text-shadow: none;
+}
+/*header end*/
+
+/*footer start*/
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: var(--primary-color);
+    width: 100%;
+    color: var(--tertiary-color);
+    position: relative;
+}
+
+footer h2 {
+    margin: 0;
+    position: relative;
+    left: 10px;
+}
+
+footer p {
+    position: relative;
+    right: 10px;
+}
+/*footer end*/
