@@ -10,9 +10,11 @@
     <body>
         <!--hero img start-->
         <section id="hero" class="hero">
-            <div class="hero-text">
-                <h1>Hello, I'm <span>Dylan Killelea</span>.<br>I'm a Full-Stack Web Developer.</h1>
-                <a href="#header"><button type="submit">View My Work  🠗</button></a>
+            <div class="flex-hero">
+                <div class="hero-text">
+                    <h1>Hello, I'm <span>Dylan Killelea</span>.<br>I'm a Full-Stack Web Developer.</h1>
+                    <a href="#header"><button type="submit">View My Work  🠗</button></a>
+                </div>
             </div>
         </section>
         <!--hero img end-->
@@ -27,7 +29,7 @@
                         <a href="#hero">HOME</a>
                     </li>
                     <li>
-                        <a href="">ABOUT</a>
+                        <a href="#about">ABOUT</a>
                     </li>
                     <li>
                         <a href="">PORTFOLIO</a>
@@ -42,41 +44,50 @@
         <!--end of navigation-->
 
         <!--"about" section-->
-        <section id="" class="about">
+        <section id="about" class="about">
             <div class="flex-row">
-                <h2 class="section-tile">
+                <h2 class="section-title1">
                     ABOUT
                 </h2>
             </div>
+
             <div class="expectation-icons">
-                <div>
-                    <img src="assets/images/Fast Working_Monochromatic.svg" alt="fast working example" />
-                    <h3>Fast</h3>
-                    <p>Fast load times is my biggest priority.</p>
+                <div class="flex-about">
+                    <div>
+                        <img src="assets/images/Fast Working_Monochromatic.svg" alt="fast working example" />
+                        <h3>Fast</h3>
+                        <p>Fast load times is my biggest priority.</p>                        
+                    </div>
                 </div>
 
-                <div>
-                    <img src="assets/images/Mobile Testing_Monochromatic.svg" alt="mobile responsive" />
-                    <h3>Responsive</h3>
-                    <p>My layouts will work on any type of device, big or small.</p>
+                <div class="flex-about">
+                    <div>
+                        <img src="assets/images/Mobile Testing_Monochromatic.svg" alt="mobile responsive" />
+                        <h3>Responsive</h3>
+                        <p>My layouts will work on any type of device, big or small.</p>
+                    </div>
                 </div>
-
-                <div>
-                    <img src="assets/images/Web development _Monochromatic.svg" alt="web structuring and dynamics" />
-                    <h3>Vivid</h3>
-                    <p>Websites shouldn't be static. I will make it come to life.</p>
-                </div>
+                <div class="flex-about">
+                    <div>
+                        <img src="assets/images/Web development _Monochromatic.svg" alt="web structuring and dynamics" />
+                        <h3>Vivid</h3>
+                        <p>Websites shouldn't be static. I will make it come to life.</p>
+                    </div>
+                </div> 
             </div>
-            <div class="profile-pic">
-                <div>
-                    <img src="assets/images/Untitled design.jpg" alt="james killelea taking a selfie" />
+
+            <div class="profile">
+                <div class="profile-img">
+                    <img src="assets/images/profilpic.svg" alt="James Killelea taking a selfie" />
                     <h3>Who is this guy?</h3>
                     <p>
                         I am currently studying web development at the University of Texas at Austin. Growing up I always had a passion for creating websites and making them feel alive, now I get to do that with code!
                     </p>
                 </div>
+                <aside class="profile-chart">
+                    <img src="assets/images/CSS.svg" alt="showcasing James's coding abbilities using a graph" />
+                </aside>
             </div>
-            <img src="assets/images/CSS.svg" alt="shows amount of skill in different languages" />
         </section>
         <!--end of about secion-->
         

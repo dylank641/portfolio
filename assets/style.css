@@ -6,23 +6,25 @@
 
 body {
     color: var(--secondary-color);
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 /*hero img start*/
 .hero {
-    background-image: url("../assets/images/ash-edmonds-gcINRBbUxl0-unsplash.jpg");
+    background-image: url("../assets/images/ffff.jpg");
     background-size: cover;
     background-position: bottom;
     position: relative;
     height: 1000px;
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-hero {
+    width: 55%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .hero-text {
@@ -31,21 +33,20 @@ body {
     padding: 20%;
     color: white;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .hero-text span {
     color: rgb(226, 55, 141);
-    font-style: italic;
 }
 
 .hero-text button {
-    background-color: var(--primary-color);
-    border: 3px solid var(--primary-color);
+    background-color: transparent;
+    border: 3px solid rgb(226, 55, 141);
     color:white;
     padding: 8px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 30px;
     margin: 4px 2px;
     cursor: pointer;
@@ -73,7 +74,7 @@ header {
 
 header a {
     text-decoration: none;
-    color: var(--tertiary-color);
+    color: rgb(226, 55, 141);
 }
 header nav {
     margin: 0;
@@ -101,6 +102,12 @@ header nav ul li a:hover {
 }
 /*header end*/
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
 /*footer start*/
 footer {
     display: flex;
@@ -123,3 +130,62 @@ footer p {
     right: 10px;
 }
 /*footer end*/
+
+/*about section start*/
+.about {
+    background-color: whitesmoke;
+}
+.section-title1 {
+    font-size: 45px;
+    color: var(--secondary-color);
+    border-bottom: 3px solid var(--secondary-color);
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 30px auto 35px auto;
+    width: 25%;
+}
+
+.expectation-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-size: 2vh;
+}
+
+.flex-about {
+    text-align: center;
+}
+
+.flex-about img {
+    max-width: 300px;
+    max-height: 300px;
+    width: auto;
+    height: auto;
+}
+
+.profile {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3% 0 0 0;
+    justify-content: center;
+    align-items: start;
+}
+
+.profile-img img {
+    width: 400px;
+    height: 400px;
+}
+
+.profile-img {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 35%;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    font-size: 2.5vh;
+    padding: 0 0 15px 0;
+}
+
+
