@@ -1,6 +1,6 @@
 :root {
     --primary-color: #0002E8;
-    --secondary-color: #3838C2;
+    --secondary-color: black;
     --tertiary-color: #f64c72;
 }
 
@@ -113,10 +113,11 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background: var(--primary-color);
+    background: var(--secondary-color);
     width: 100%;
     color: var(--tertiary-color);
     position: relative;
+    padding: 25px 0;
 }
 
 footer h2 {
@@ -138,7 +139,7 @@ footer p {
 .section-title1 {
     font-size: 45px;
     color: var(--primary-color);
-    border-bottom: 3px solid var(--tertiary-color);
+    border-bottom: 3px solid var(--secondary-color);
     padding-bottom: 20px;
     text-align: center;
     margin: 30px auto 35px auto;
@@ -148,7 +149,17 @@ footer p {
 .section-title2 {
     font-size: 45px;
     color: var(--tertiary-color);
-    border-bottom: 3px solid var(--primary-color);
+    border-bottom: 3px solid var(--secondary-color);
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 30px auto 35px auto;
+    width: 25%;
+}
+
+.section-title3 {
+    font-size: 45px;
+    color: var(--primary-color);
+    border-bottom: 3px solid var(--tertiary-color);
     padding-bottom: 20px;
     text-align: center;
     margin: 30px auto 35px auto;
@@ -166,6 +177,10 @@ footer p {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
+}
+
+.flex-about h3 {
+    color: var(--primary-color);
 }
 
 .flex-about img {
@@ -194,13 +209,12 @@ footer p {
     font-size: 2.5vh;
     padding: 0 0 15px 0;
     margin-bottom: 20px;
+    color: var(--secondary-color)
 }
 
 .profile-h3 {
-    color: var(--tertiary-color);
-    font-size: 5vh;
-    border-bottom: 3px solid var(--primary-color);
-    margin-bottom: 15px;
+    color: var(--primary-color);
+    font-size: 4vh;
     padding-bottom: 5px;
 }
 
@@ -248,10 +262,27 @@ footer p {
     height: auto;
     margin-bottom: 20px;
 }
+/*project section end*/
 
+/*contact section start*/
+.contact {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
 
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-size: 2.5vh;
+}
 
+.personal-info h3 {
+    margin-bottom: 5px;
+}
 
-
-
-
+form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
