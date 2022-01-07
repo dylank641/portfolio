@@ -8,7 +8,7 @@ A website that showcases James Killelea's skills and the services he can offer y
 * CSS
 
 ## Website
-https://lernantino.github.io/run-buddy/
+https://dylank641.github.io/portfolio/
 
 ## Contribution
 Made with ❤️ by James Killelea
