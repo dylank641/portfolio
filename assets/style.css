@@ -4,6 +4,12 @@
     --tertiary-color: #f64c72;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     color: var(--secondary-color);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -102,12 +108,6 @@ header nav ul li a:hover {
 }
 /*header end*/
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: 0;
-}
-
 /*footer start*/
 footer {
     display: flex;
@@ -123,12 +123,10 @@ footer {
 footer h2 {
     margin: 0;
     position: relative;
-    left: 10px;
 }
 
 footer p {
     position: relative;
-    right: 10px;
 }
 /*footer end*/
 
@@ -219,9 +217,11 @@ footer p {
 }
 
 .profile-img img {
-    width: 400px;
-    height: 400px;
-    margin-bottom: 20px;
+    width: 100%;
+}
+
+.profile-chart img {
+    width: 100%;
 }
 /*about section end*/
 
@@ -234,7 +234,15 @@ footer p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: start;
+}
+
+.projects img {
+    width: 50%;
+}
+
+.first-img img {
+    flex-grow: 1;
+    width: 30vw;
 }
 
 .second-set {
@@ -243,11 +251,8 @@ footer p {
 }
 
 .second-set img {
-    max-width: 400px;
-    max-height: 400px;
-    width: auto;
-    height: auto;
     margin-bottom: 20px;
+    width: 20vw;
 }
 
 .other-images {
@@ -256,11 +261,8 @@ footer p {
 }
 
 .other-images img {
-    max-width: 400px;
-    max-height: 400px;
-    width: auto;
-    height: auto;
     margin-bottom: 20px;
+    width: 20vw;
 }
 /*project section end*/
 
@@ -285,4 +287,35 @@ form {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+}
+
+form button {
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 920px) {
+    header nav ul li a {
+        font-size: 3vw;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    header nav ul li a {
+        font-size: 3.5vw;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .section-title1 {
+        font-size: 10vw;
+    }
+    .section-title2 {
+        font-size: 10vw;
+    }
+    .section-title3 {
+        font-size: 10vw;
+    }
+    div .hero-text {
+        width: 100vw;
+    }
 }
